@@ -33,6 +33,10 @@ a,a:hover,a:visited,a:active {
 	color: $main-color;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+
 #SiteHeader {
 	@include layout-main;
 	height: $site-header-height;
@@ -51,6 +55,22 @@ a,a:hover,a:visited,a:active {
 }
 #Main {
 	@include layout-main;
+	.singleArticle {
+		.articleBody {
+			line-height: $main-line-height;
+			p {
+				margin-bottom: $main-font-size*1.5;
+			}
+			ul {
+				margin-top: $main-font-size;
+				margin-bottom: $main-font-size;
+				padding-left: $main-font-size;
+				li {
+
+				}
+			}
+		}
+	}
 }
 #SiteFooter {
 	@include layout-main;
@@ -60,12 +80,19 @@ a,a:hover,a:visited,a:active {
 	list-style: none;
 }
 
-.articleTitle {
-	color: $header-color;
-	font-size: $header-font-size;
-}
-.articleDate {
-	color: $info-color;
-	font-family: $info-font-family;
-	font-size: $info-font-size;
+.articleHeader {
+	display: block;
+	margin-bottom: $header-margin;
+	line-height: $header-font-size;
+	.articleTitle {
+		display: inline;
+		color: $header-color;
+		font-size: $header-font-size;
+	}
+	.articleDate {
+		display: inline-block;
+		color: $info-color;
+		font-family: $info-font-family;
+		font-size: $info-font-size;
+	}
 }

@@ -28,6 +28,9 @@ html, body {
 a, a:hover, a:visited, a:active {
   color: #cccccc; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
 #SiteHeader {
   width: 640px;
   margin: 0 auto;
@@ -46,6 +49,14 @@ a, a:hover, a:visited, a:active {
 #Main {
   width: 640px;
   margin: 0 auto; }
+  #Main .singleArticle .articleBody {
+    line-height: 120%; }
+    #Main .singleArticle .articleBody p {
+      margin-bottom: 24px; }
+    #Main .singleArticle .articleBody ul {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      padding-left: 16px; }
 
 #SiteFooter {
   width: 640px;
@@ -54,11 +65,16 @@ a, a:hover, a:visited, a:active {
 .articleList {
   list-style: none; }
 
-.articleTitle {
-  color: #ececec;
-  font-size: 32px; }
-
-.articleDate {
-  color: #999999;
-  font-family: "Quicksand", sans-serif;
-  font-size: 14px; }
+.articleHeader {
+  display: block;
+  margin-bottom: 44px;
+  line-height: 32px; }
+  .articleHeader .articleTitle {
+    display: inline;
+    color: #ececec;
+    font-size: 32px; }
+  .articleHeader .articleDate {
+    display: inline-block;
+    color: #999999;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px; }

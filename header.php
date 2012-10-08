@@ -19,6 +19,6 @@
 </head>
 <body>
 	<header id="SiteHeader">
-		<h1 id="Logo"><?php bloginfo('name');?></h1>
+		<h1 id="Logo"><a href="/"><?php bloginfo('name');?></a></h1>
 		<nav><gcse:searchbox-only></gcse:searchbox-only></nav>
 	</header>
