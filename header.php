@@ -5,7 +5,6 @@
 	<title><?php the_appropriate_title();?></title>
 	<link href='//fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" media="screen">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/google_site_search.css" media="screen">
 	<script>
 		(function() {
 			var cx = '006434572749424858842:tfi0fkdcggg';

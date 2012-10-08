@@ -1,4 +1,5 @@
 @import "definitions";
+#Main{
 /* Slight reset to make the preview have ample padding. */
 .cse .gsc-control-cse,
 .gsc-control-cse {
@@ -557,4 +558,4 @@ td.gsc-branding-text, td.gcsc-branding-text {
 	background-image: -ms-linear-gradient(top,whiteSmoke,#F1F1F1);
 	background-image: -o-linear-gradient(top,whiteSmoke,#F1F1F1);
 }
-
+}
