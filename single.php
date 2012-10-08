@@ -1,5 +1,6 @@
 <?php get_header();?>
 <div id="Main">
+	<?php the_post();?>
 	<article class="singleArticle">
 		<header>
 			<h1 class="articleTitle"><?php the_title();?></h1>

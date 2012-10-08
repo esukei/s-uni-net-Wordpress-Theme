@@ -25,6 +25,9 @@ html, body {
   font-family: sans-serif;
   font-size: 16px; }
 
+a, a:hover, a:visited, a:active {
+  color: #cccccc; }
+
 #SiteHeader {
   width: 640px;
   margin: 0 auto;
@@ -51,7 +54,7 @@ html, body {
 .articleList {
   list-style: none; }
 
-.articleHeader {
+.articleTitle {
   color: #ececec;
   font-size: 32px; }
 
