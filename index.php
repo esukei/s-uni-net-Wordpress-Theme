@@ -11,7 +11,7 @@
 			?>
 			<li class="articleHeader">
 				<a class="articleTitle" href="<?php the_permalink();?>"><?php the_title();?></a>
-				<span class="postDate"><?php the_date('Y-m-d H:i:s');?></span>
+				<span class="articleDate"><?php the_date('Y-m-d H:i:s');?></span>
 			</li>
 			<?php
 			endwhile;

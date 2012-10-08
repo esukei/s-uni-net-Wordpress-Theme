@@ -47,6 +47,9 @@ h1,h2,h3,h4,h5,h6 {
 		font-family: $logo-font-family;
 		font-size: $logo-font-size;
 		line-height: $site-header-height;
+		a {
+			text-decoration: none;
+		}
 	}
 	nav {
 		margin: $margin-align-right;
