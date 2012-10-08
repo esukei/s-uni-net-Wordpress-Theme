@@ -13,3 +13,55 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright 2012 Satoru Kawahara @ s-uni.net
 blog.s-uni.net Theme is distributed under the terms of the GNU GPL
 */
+@import "definitions";
+
+* {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	border: 0 none;
+}
+
+html,body {
+	color: $main-color;
+	background-color: $main-background-color;
+	font-family: $main-font-family;
+	font-size: $main-font-size;
+}
+
+#SiteHeader {
+	@include layout-main;
+	height: $site-header-height;
+	#Logo {
+		float: left;
+		width: $main-width/4;
+		color: $logo-color;
+		font-family: $logo-font-family;
+		font-size: $logo-font-size;
+		line-height: $site-header-height;
+	}
+	nav {
+		margin: $margin-align-right;
+		width: $main-width/2;
+	}
+}
+#Main {
+	@include layout-main;
+}
+#SiteFooter {
+	@include layout-main;
+}
+
+.articleList {
+	list-style: none;
+}
+
+.articleHeader {
+	color: $header-color;
+	font-size: $header-font-size;
+}
+.articleDate {
+	color: $info-color;
+	font-family: $info-font-family;
+	font-size: $info-font-size;
+}

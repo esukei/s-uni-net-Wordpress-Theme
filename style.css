@@ -1,0 +1,61 @@
+/*
+Theme Name: blog.s-uni.net Theme
+Theme URI: https://github.com/esukei/s-uni-net-Wordpress-Theme
+Description: blog.s-uni.net theme for WordPress.
+Author: Satoru Kawahara
+Author URI: http://s-uni.net/
+Version: 0.2
+Tags: black, two-columns, fixed-width
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Copyright 2012 Satoru Kawahara @ s-uni.net
+blog.s-uni.net Theme is distributed under the terms of the GNU GPL
+*/
+* {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  border: 0 none; }
+
+html, body {
+  color: #cccccc;
+  background-color: #2c2c2c;
+  font-family: sans-serif;
+  font-size: 16px; }
+
+#SiteHeader {
+  width: 640px;
+  margin: 0 auto;
+  height: 44px; }
+  #SiteHeader #Logo {
+    float: left;
+    width: 160px;
+    color: #999999;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    line-height: 44px; }
+  #SiteHeader nav {
+    margin: 0 0 0 auto;
+    width: 320px; }
+
+#Main {
+  width: 640px;
+  margin: 0 auto; }
+
+#SiteFooter {
+  width: 640px;
+  margin: 0 auto; }
+
+.articleList {
+  list-style: none; }
+
+.articleHeader {
+  color: #ececec;
+  font-size: 32px; }
+
+.articleDate {
+  color: #999999;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px; }
