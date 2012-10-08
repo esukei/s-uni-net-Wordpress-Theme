@@ -24,7 +24,6 @@
 		<?php
 		endif;
 		?>
-	?>
 	</section>
 </div>
 <?php get_footer();?>
