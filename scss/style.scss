@@ -48,7 +48,12 @@ h1,h2,h3,h4,h5,h6 {
 		font-size: $logo-font-size;
 		line-height: $site-header-height;
 		a {
+			color: $logo-color;
 			text-decoration: none;
+			&:hover,&:active,&:visited,&:focus {
+				color: $logo-color;
+				text-decoration: none;
+			}
 		}
 	}
 	nav {
