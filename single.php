@@ -10,5 +10,6 @@
 		<?php the_content();?>
 		</div>
 	</article>
+	<!-- X:S ZenBackWidget --><script>document.write(decodeURI("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//blog.s-uni.net/&nsid=108255259238883943%3A%3A108255266755065500&rand="+Math.ceil((new Date()*1)*Math.random())+"' "+decodeURI("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget -->
 </div>
 <?php get_footer();?>
