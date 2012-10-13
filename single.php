@@ -29,7 +29,7 @@
 			<?php while($query->have_posts()):$query->the_post();?>
 			<li class="articleHeader">
 				<a class="articleTitle" href="<?php the_permalink(); ?>"><?php the_title();?></a>
-				<span class="articleDate"><?php the_date('Y-m-d H:i:s');?></span>
+				<span class="articleDate"><?php the_time(get_option('date_format'));?></span>
 			</li>
 			<?php endwhile;?>
 		</ul>
