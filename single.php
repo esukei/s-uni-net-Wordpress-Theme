@@ -23,10 +23,10 @@
 		<?php
 		$args = array('posts_per_page' => 20);
 		$query = new WP_Query($args);
-		if(have_post()):
+		if($query->have_posts()):
 		?>
 		<ul>
-			<?php while(have_post()):the_post();?>
+			<?php while($query->have_posts()):$query->the_post();?>
 			<li class="articleHeader">
 				<a class="articleTitle" href="<?php the_permalink(); ?>"><?php the_title();?></a>
 				<span class="articleDate"><?php the_date('Y-m-d H:i:s');?></span>
