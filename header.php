@@ -19,7 +19,7 @@
 	<?php wp_head();?>
 </head>
 <body>
+<div id="Main">
 	<header id="SiteHeader">
 		<h1 id="Logo"><a href="/"><?php bloginfo('name');?></a></h1>
-		<nav><gcse:searchbox-only></gcse:searchbox-only></nav>
 	</header>

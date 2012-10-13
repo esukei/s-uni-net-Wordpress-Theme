@@ -1,5 +1,7 @@
 <?php get_header();?>
-<div id="Main">
+	<nav class="search">
+		<gcse:searchbox-only></gcse:searchbox-only>
+	</nav>
 	<section id="Index">
 		<?php
 		if(have_posts()):
@@ -25,5 +27,5 @@
 		endif;
 		?>
 	</section>
-</div>
+</div><?php //close Main?>
 <?php get_footer();?>
