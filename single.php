@@ -14,29 +14,29 @@
 			</footer>
 		</article>
 	</div>
+	<div id="Side">
+		<nav class="search">
+			<gcse:searchbox-only></gcse:searchbox-only>
+		</nav>
+		<nav id="NewlyArticles">
+			<?php
+			$args = array('posts_per_page' => 20);
+			$query = new WP_Query($args);
+			if($query->have_posts()):
+			?>
+			<ul>
+				<?php while($query->have_posts()):$query->the_post();?>
+				<li class="articleHeader">
+					<a class="articleTitle" href="<?php the_permalink(); ?>"><?php the_title();?></a>
+					<span class="articleDate"><?php the_time(get_option('date_format'));?></span>
+				</li>
+				<?php endwhile;?>
+			</ul>
+			<?php
+			endif;
+			wp_reset_query();
+			?>
+		</nav>
+	</div>
 </div><?php //close Main ?>
-<div id="Side">
-	<nav class="search">
-		<gcse:searchbox-only></gcse:searchbox-only>
-	</nav>
-	<nav id="NewlyArticles">
-		<?php
-		$args = array('posts_per_page' => 20);
-		$query = new WP_Query($args);
-		if($query->have_posts()):
-		?>
-		<ul>
-			<?php while($query->have_posts()):$query->the_post();?>
-			<li class="articleHeader">
-				<a class="articleTitle" href="<?php the_permalink(); ?>"><?php the_title();?></a>
-				<span class="articleDate"><?php the_time(get_option('date_format'));?></span>
-			</li>
-			<?php endwhile;?>
-		</ul>
-		<?php
-		endif;
-		wp_reset_query();
-		?>
-	</nav>
-</div>
 <?php get_footer();?>

@@ -18,7 +18,7 @@
 	<?php wp_head();?>
 </head>
 <body>
+<header id="SiteHeader">
+	<h1 id="Logo"><a href="/"><?php bloginfo('name');?></a></h1>
+</header>
 <div id="Main">
-	<header id="SiteHeader">
-		<h1 id="Logo"><a href="/"><?php bloginfo('name');?></a></h1>
-	</header>

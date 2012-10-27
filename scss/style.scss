@@ -63,6 +63,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 #Main {
 	@include layout-main;
+	position: relative;
 	.singleArticle {
 		.articleBody {
 			line-height: $main-line-height;
@@ -78,6 +79,14 @@ h1,h2,h3,h4,h5,h6 {
 				}
 			}
 		}
+	}
+	#Article {
+		
+	}
+	#Side {
+		position: absolute;
+		top: 0;
+		left: 640px;
 	}
 }
 #SiteFooter {
