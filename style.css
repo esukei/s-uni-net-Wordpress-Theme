@@ -22,7 +22,7 @@ blog.s-uni.net Theme is distributed under the terms of the GNU GPL
 html, body {
   color: #666666;
   background-color: #fcfcfc;
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 14pt; }
 
 a, a:hover, a:visited, a:active {
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   position: relative; }
   #Main .singleArticle .articleBody {
-    line-height: 120%; }
+    line-height: 150%; }
     #Main .singleArticle .articleBody p {
       margin-bottom: 21pt; }
     #Main .singleArticle .articleBody ul {
