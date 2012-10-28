@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 160px;
     color: #999999;
     font-family: "Quicksand", sans-serif;
-    font-size: 12pt;
+    font-size: 14pt;
     line-height: 44px; }
     #SiteHeader #Logo a {
       color: #999999;
@@ -67,7 +67,8 @@ h1, h2, h3, h4, h5, h6 {
   #Main #Side {
     width: 340px;
     position: fixed;
-    left: 640px;
+    left: 50%;
+    margin-left: 320px;
     top: 0; }
 
 #SiteFooter {
@@ -89,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     color: #999999;
     font-family: "Quicksand", sans-serif;
-    font-size: 14pt; }
+    font-size: 16pt; }
 
 #SiteHeader, #Main {
   /* Slight reset to make the preview have ample padding. */

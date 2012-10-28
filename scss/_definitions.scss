@@ -11,9 +11,9 @@ $main-font-size: 14pt;
 $main-font-family: sans-serif;
 $main-line-height: 150%;
 $header-font-size: 32pt;
-$info-font-size: 14pt;
+$info-font-size: 16pt;
 $info-font-family: 'Quicksand', sans-serif;
-$logo-font-size: 12pt;
+$logo-font-size: 14pt;
 $logo-font-family: 'Quicksand', sans-serif;
 
 //margin alignment
@@ -40,5 +40,6 @@ $header-margin: $unit;
 @mixin layout-side {
 	width: $side-width;
 	position: fixed;
-	left: $main-width;
+	left: 50%;
+	margin-left: $main-width/2;
 }
