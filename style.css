@@ -65,9 +65,10 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 16px;
       padding-left: 16px; }
   #Main #Side {
+    width: 340px;
     position: absolute;
-    top: 0;
-    left: 640px; }
+    left: 640px;
+    top: 0; }
 
 #SiteFooter {
   width: 640px;

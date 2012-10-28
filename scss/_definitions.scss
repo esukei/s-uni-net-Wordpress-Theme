@@ -23,8 +23,8 @@ $margin-align-right: 0 0 0 auto;
 
 //dimentions
 $main-width: 640px;
-$side-width: 340px;
-$whole-width: $main-width + $side-width;
+$max-width: 980px;
+$side-width: $max-width - $main-width;
 
 $unit: 44px;
 $site-header-height: $unit;
@@ -35,4 +35,10 @@ $header-margin: $unit;
 @mixin layout-main {
 	width: $main-width;
 	margin: 0 auto;
+}
+
+@mixin layout-side {
+	width: $side-width;
+	position: absolute;
+	left: $main-width;
 }
