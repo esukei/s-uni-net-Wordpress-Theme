@@ -22,7 +22,7 @@ blog.s-uni.net Theme is distributed under the terms of the GNU GPL
 html, body {
   color: #666666;
   background-color: #fcfcfc;
-  font-family: serif;
+  font-family: sans-serif;
   font-size: 14pt; }
 
 a, a:hover, a:visited, a:active {
