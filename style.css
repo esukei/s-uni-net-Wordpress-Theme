@@ -23,7 +23,7 @@ html, body {
   color: #666666;
   background-color: #fcfcfc;
   font-family: sans-serif;
-  font-size: 16px; }
+  font-size: 32px; }
 
 a, a:hover, a:visited, a:active {
   color: #666666; }
@@ -59,14 +59,14 @@ h1, h2, h3, h4, h5, h6 {
   #Main .singleArticle .articleBody {
     line-height: 120%; }
     #Main .singleArticle .articleBody p {
-      margin-bottom: 24px; }
+      margin-bottom: 48px; }
     #Main .singleArticle .articleBody ul {
-      margin-top: 16px;
-      margin-bottom: 16px;
-      padding-left: 16px; }
+      margin-top: 32px;
+      margin-bottom: 32px;
+      padding-left: 32px; }
   #Main #Side {
     width: 340px;
-    position: absolute;
+    position: fixed;
     left: 640px;
     top: 0; }
 
@@ -80,16 +80,16 @@ h1, h2, h3, h4, h5, h6 {
 .articleHeader {
   display: block;
   margin-bottom: 44px;
-  line-height: 32px; }
+  line-height: 48px; }
   .articleHeader .articleTitle {
     display: inline;
     color: #333333;
-    font-size: 32px; }
+    font-size: 48px; }
   .articleHeader .articleDate {
     display: inline-block;
     color: #999999;
     font-family: "Quicksand", sans-serif;
-    font-size: 14px; }
+    font-size: 24px; }
 
 #SiteHeader, #Main {
   /* Slight reset to make the preview have ample padding. */
