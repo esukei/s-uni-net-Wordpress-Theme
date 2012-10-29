@@ -37,6 +37,27 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: normal;
 }
 
+.articleList {
+	list-style: none;
+}
+
+.articleHeader {
+	display: block;
+	margin-bottom: $header-margin;
+	line-height: 1;
+	.articleTitle {
+		display: inline;
+		color: $header-color;
+		font-size: $header-font-size;
+	}
+	.articleDate {
+		display: inline-block;
+		color: $info-color;
+		font-family: $info-font-family;
+		font-size: $info-font-size;
+	}
+}
+
 #Main {
 	@include layout-main;
 	position: relative;
@@ -94,10 +115,13 @@ h1,h2,h3,h4,h5,h6 {
 		#NewlyArticles {
 			.articleHeader {
 				.articleTitle {
-					font-size: $main-font-size;
+					font-size: $list-font-size;
+					a {
+						text-decoration: none;
+					}
 				}
 				.articleDate {
-					font-size: $info-font-size;
+					font-size: $list-info-font-size;
 				}
 			}
 		}
@@ -105,27 +129,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 #SiteFooter {
 	@include layout-main;
-}
-
-.articleList {
-	list-style: none;
-}
-
-.articleHeader {
-	display: block;
-	margin-bottom: $header-margin;
-	line-height: $header-font-size;
-	.articleTitle {
-		display: inline;
-		color: $header-color;
-		font-size: $header-font-size;
-	}
-	.articleDate {
-		display: inline-block;
-		color: $info-color;
-		font-family: $info-font-family;
-		font-size: $info-font-size;
-	}
 }
 
 @import "google_site_search";
