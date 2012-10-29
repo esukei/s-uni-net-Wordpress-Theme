@@ -52,9 +52,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 596px;
   margin: 0 auto;
   position: relative;
-  background-color: white;
+  background-color: #fefefe;
   padding: 0 22px 22px;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.03); }
   #Main #SiteHeader {
     height: 44px; }
     #Main #SiteHeader #Logo {
@@ -87,12 +87,14 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: 640px;
     top: 0; }
-    #Main #Side #NewlyArticles .articleHeader .articleTitle {
-      font-size: 14pt; }
-      #Main #Side #NewlyArticles .articleHeader .articleTitle a {
+    #Main #Side #NewlyArticles .articleHeader {
+      margin-bottom: 11px; }
+      #Main #Side #NewlyArticles .articleHeader .articleTitle {
+        font-size: 14pt; }
+      #Main #Side #NewlyArticles .articleHeader a.articleTitle {
         text-decoration: none; }
-    #Main #Side #NewlyArticles .articleHeader .articleDate {
-      font-size: 10pt; }
+      #Main #Side #NewlyArticles .articleHeader .articleDate {
+        font-size: 10pt; }
 
 #SiteFooter {
   width: 596px;
@@ -145,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   #SiteHeader .cse .gsc-control-cse,
   #SiteHeader .gsc-control-cse, #Main .cse .gsc-control-cse,
   #Main .gsc-control-cse {
-    background-color: white;
+    background-color: #fefefe;
     border: 0 none; }
   #SiteHeader .cse .gsc-control-cse:after,
   #SiteHeader .gsc-control-cse:after, #Main .cse .gsc-control-cse:after,
@@ -170,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 99%; }
   #SiteHeader .gsc-input-box, #Main .gsc-input-box {
     border: 1px solid #cccccc;
-    background: white;
+    background: #fefefe;
     height: 25px; }
   #SiteHeader .gsc-search-box .gsc-input > input:hover,
   #SiteHeader .gsc-input-box-hover, #Main .gsc-search-box .gsc-input > input:hover,
@@ -204,26 +206,26 @@ h1, h2, h3, h4, h5, h6 {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-color: #cccccc;
-    background-color: white;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-    background-image: -webkit-linear-gradient(top, white, white);
-    background-image: -moz-linear-gradient(top, white, white);
-    background-image: -ms-linear-gradient(top, white, white);
-    background-image: -o-linear-gradient(top, white, white);
-    background-image: linear-gradient(top, white, white);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='white',EndColorStr='white'); }
+    background-color: #fefefe;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#fefefe));
+    background-image: -webkit-linear-gradient(top, #fefefe, #fefefe);
+    background-image: -moz-linear-gradient(top, #fefefe, #fefefe);
+    background-image: -ms-linear-gradient(top, #fefefe, #fefefe);
+    background-image: -o-linear-gradient(top, #fefefe, #fefefe);
+    background-image: linear-gradient(top, #fefefe, #fefefe);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fefefe',EndColorStr='#fefefe'); }
   #SiteHeader .cse input.gsc-search-button:hover,
   #SiteHeader input.gsc-search-button:hover, #Main .cse input.gsc-search-button:hover,
   #Main input.gsc-search-button:hover {
     border-color: #cccccc;
-    background-color: white;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-    background-image: -webkit-linear-gradient(top, white, white);
-    background-image: -moz-linear-gradient(top, white, white);
-    background-image: -ms-linear-gradient(top, white, white);
-    background-image: -o-linear-gradient(top, white, white);
-    background-image: linear-gradient(top, white, white);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='white',EndColorStr='white'); }
+    background-color: #fefefe;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#fefefe));
+    background-image: -webkit-linear-gradient(top, #fefefe, #fefefe);
+    background-image: -moz-linear-gradient(top, #fefefe, #fefefe);
+    background-image: -ms-linear-gradient(top, #fefefe, #fefefe);
+    background-image: -o-linear-gradient(top, #fefefe, #fefefe);
+    background-image: linear-gradient(top, #fefefe, #fefefe);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fefefe',EndColorStr='#fefefe'); }
   #SiteHeader .cse input.gsc-search-button:focus,
   #SiteHeader input.gsc-search-button:focus, #Main .cse input.gsc-search-button:focus,
   #Main input.gsc-search-button:focus {

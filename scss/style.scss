@@ -63,7 +63,7 @@ h1,h2,h3,h4,h5,h6 {
 	position: relative;
 	background-color: $main-background-color;
 	padding: 0 $unit/2 $unit/2;
-	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .05);
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .03);
 	#SiteHeader {
 		height: $site-header-height;
 		#Logo {
@@ -114,11 +114,12 @@ h1,h2,h3,h4,h5,h6 {
 		}
 		#NewlyArticles {
 			.articleHeader {
+				margin-bottom: $unit/4;
 				.articleTitle {
 					font-size: $list-font-size;
-					a {
-						text-decoration: none;
-					}
+				}
+				a.articleTitle {
+					text-decoration: none;
 				}
 				.articleDate {
 					font-size: $list-info-font-size;
