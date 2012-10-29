@@ -41,8 +41,8 @@ h1,h2,h3,h4,h5,h6 {
 	@include layout-main;
 	position: relative;
 	background-color: $main-background-color;
-	padding: $unit/2;
-	box-shadow: 0 0 11px 11px rgba(0, 0, 0, .05);
+	padding: 0 $unit/2 $unit/2;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .05);
 	#SiteHeader {
 		height: $site-header-height;
 		#Logo {
@@ -88,6 +88,19 @@ h1,h2,h3,h4,h5,h6 {
 	#Side {
 		@include layout-side;
 		top: 0;
+		.search {
+
+		}
+		#NewlyArticles {
+			.articleHeader {
+				.articleTitle {
+					font-size: $main-font-size;
+				}
+				.articleDate {
+					font-size: $info-font-size;
+				}
+			}
+		}
 	}
 }
 #SiteFooter {

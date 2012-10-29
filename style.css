@@ -36,8 +36,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   position: relative;
   background-color: white;
-  padding: 22px;
-  box-shadow: 0 0 11px 11px rgba(0, 0, 0, 0.05); }
+  padding: 0 22px 22px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.05); }
   #Main #SiteHeader {
     height: 44px; }
     #Main #SiteHeader #Logo {
@@ -65,10 +65,15 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 14pt;
       padding-left: 14pt; }
   #Main #Side {
-    width: 340px;
+    width: 296px;
+    padding: 22px;
     position: absolute;
     left: 640px;
     top: 0; }
+    #Main #Side #NewlyArticles .articleHeader .articleTitle {
+      font-size: 14pt; }
+    #Main #Side #NewlyArticles .articleHeader .articleDate {
+      font-size: 16pt; }
 
 #SiteFooter {
   width: 596px;
