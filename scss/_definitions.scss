@@ -1,6 +1,7 @@
 //color
 $main-color: #666666;
-$main-background-color: #FCFCFC;
+$body-background-color: #FCFCFC;
+$main-background-color: #FFFFFF;
 $header-color: #333333;
 $info-color:#999999;
 $logo-color:#999999;
@@ -33,13 +34,12 @@ $header-margin: $unit;
 
 //mixins
 @mixin layout-main {
-	width: $main-width;
+	width: $main-width - $unit;
 	margin: 0 auto;
 }
 
 @mixin layout-side {
 	width: $side-width;
-	position: fixed;
-	left: 50%;
-	margin-left: $main-width/2;
+	position: absolute;
+	left: $main-width;
 }

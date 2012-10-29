@@ -3,7 +3,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<title><?php the_appropriate_title();?></title>
-	<meta name="viewport" content="width=640px, initial-scale=1">
+	<meta name="viewport" content="width=640, initial-scale=1">
 	<link href='//fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" media="screen">
 	<script>
@@ -19,7 +19,7 @@
 	<?php wp_head();?>
 </head>
 <body>
-<header id="SiteHeader">
-	<h1 id="Logo"><a href="/"><?php bloginfo('name');?></a></h1>
-</header>
 <div id="Main">
+	<header id="SiteHeader">
+		<h1 id="Logo"><a href="/"><?php bloginfo('name');?></a></h1>
+	</header>

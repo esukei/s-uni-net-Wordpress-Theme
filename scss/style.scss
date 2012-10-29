@@ -24,7 +24,7 @@ blog.s-uni.net Theme is distributed under the terms of the GNU GPL
 
 html,body {
 	color: $main-color;
-	background-color: $main-background-color;
+	background-color: $body-background-color;
 	font-family: $main-font-family;
 	font-size: $main-font-size;
 }
@@ -37,33 +37,35 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: normal;
 }
 
-#SiteHeader {
-	@include layout-main;
-	height: $site-header-height;
-	#Logo {
-		float: left;
-		width: $main-width/4;
-		color: $logo-color;
-		font-family: $logo-font-family;
-		font-size: $logo-font-size;
-		line-height: $site-header-height;
-		a {
-			color: $logo-color;
-			text-decoration: none;
-			&:hover,&:active,&:visited,&:focus {
-				color: $logo-color;
-				text-decoration: none;
-			}
-		}
-	}
-	nav {
-		margin: $margin-align-right;
-		width: $main-width/2;
-	}
-}
 #Main {
 	@include layout-main;
 	position: relative;
+	background-color: $main-background-color;
+	padding: $unit/2;
+	box-shadow: 0 0 11px 11px rgba(0, 0, 0, .05);
+	#SiteHeader {
+		height: $site-header-height;
+		#Logo {
+			float: left;
+			width: $main-width/4;
+			color: $logo-color;
+			font-family: $logo-font-family;
+			font-size: $logo-font-size;
+			line-height: $site-header-height;
+			a {
+				color: $logo-color;
+				text-decoration: none;
+				&:hover,&:active,&:visited,&:focus {
+					color: $logo-color;
+					text-decoration: none;
+				}
+			}
+		}
+		nav {
+			margin: $margin-align-right;
+			width: $main-width/2;
+		}
+	}
 	.singleArticle {
 		.articleBody {
 			line-height: $main-line-height;

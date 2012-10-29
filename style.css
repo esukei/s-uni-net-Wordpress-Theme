@@ -31,31 +31,31 @@ a, a:hover, a:visited, a:active {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
-#SiteHeader {
-  width: 640px;
+#Main {
+  width: 596px;
   margin: 0 auto;
-  height: 44px; }
-  #SiteHeader #Logo {
-    float: left;
-    width: 160px;
-    color: #999999;
-    font-family: "Quicksand", sans-serif;
-    font-size: 14pt;
-    line-height: 44px; }
-    #SiteHeader #Logo a {
+  position: relative;
+  background-color: white;
+  padding: 22px;
+  box-shadow: 0 0 11px 11px rgba(0, 0, 0, 0.05); }
+  #Main #SiteHeader {
+    height: 44px; }
+    #Main #SiteHeader #Logo {
+      float: left;
+      width: 160px;
       color: #999999;
-      text-decoration: none; }
-      #SiteHeader #Logo a:hover, #SiteHeader #Logo a:active, #SiteHeader #Logo a:visited, #SiteHeader #Logo a:focus {
+      font-family: "Quicksand", sans-serif;
+      font-size: 14pt;
+      line-height: 44px; }
+      #Main #SiteHeader #Logo a {
         color: #999999;
         text-decoration: none; }
-  #SiteHeader nav {
-    margin: 0 0 0 auto;
-    width: 320px; }
-
-#Main {
-  width: 640px;
-  margin: 0 auto;
-  position: relative; }
+        #Main #SiteHeader #Logo a:hover, #Main #SiteHeader #Logo a:active, #Main #SiteHeader #Logo a:visited, #Main #SiteHeader #Logo a:focus {
+          color: #999999;
+          text-decoration: none; }
+    #Main #SiteHeader nav {
+      margin: 0 0 0 auto;
+      width: 320px; }
   #Main .singleArticle .articleBody {
     line-height: 150%; }
     #Main .singleArticle .articleBody p {
@@ -66,13 +66,12 @@ h1, h2, h3, h4, h5, h6 {
       padding-left: 14pt; }
   #Main #Side {
     width: 340px;
-    position: fixed;
-    left: 50%;
-    margin-left: 320px;
+    position: absolute;
+    left: 640px;
     top: 0; }
 
 #SiteFooter {
-  width: 640px;
+  width: 596px;
   margin: 0 auto; }
 
 .articleList {
@@ -139,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   #SiteHeader .cse .gsc-control-cse,
   #SiteHeader .gsc-control-cse, #Main .cse .gsc-control-cse,
   #Main .gsc-control-cse {
-    background-color: #fcfcfc;
+    background-color: white;
     border: 0 none; }
   #SiteHeader .cse .gsc-control-cse:after,
   #SiteHeader .gsc-control-cse:after, #Main .cse .gsc-control-cse:after,
@@ -164,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 99%; }
   #SiteHeader .gsc-input-box, #Main .gsc-input-box {
     border: 1px solid #cccccc;
-    background: #fcfcfc;
+    background: white;
     height: 25px; }
   #SiteHeader .gsc-search-box .gsc-input > input:hover,
   #SiteHeader .gsc-input-box-hover, #Main .gsc-search-box .gsc-input > input:hover,
@@ -198,26 +197,26 @@ h1, h2, h3, h4, h5, h6 {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-color: #cccccc;
-    background-color: #fcfcfc;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#fcfcfc));
-    background-image: -webkit-linear-gradient(top, #fcfcfc, #fcfcfc);
-    background-image: -moz-linear-gradient(top, #fcfcfc, #fcfcfc);
-    background-image: -ms-linear-gradient(top, #fcfcfc, #fcfcfc);
-    background-image: -o-linear-gradient(top, #fcfcfc, #fcfcfc);
-    background-image: linear-gradient(top, #fcfcfc, #fcfcfc);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fcfcfc',EndColorStr='#fcfcfc'); }
+    background-color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+    background-image: -webkit-linear-gradient(top, white, white);
+    background-image: -moz-linear-gradient(top, white, white);
+    background-image: -ms-linear-gradient(top, white, white);
+    background-image: -o-linear-gradient(top, white, white);
+    background-image: linear-gradient(top, white, white);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='white',EndColorStr='white'); }
   #SiteHeader .cse input.gsc-search-button:hover,
   #SiteHeader input.gsc-search-button:hover, #Main .cse input.gsc-search-button:hover,
   #Main input.gsc-search-button:hover {
     border-color: #cccccc;
-    background-color: #fcfcfc;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#fcfcfc));
-    background-image: -webkit-linear-gradient(top, #fcfcfc, #fcfcfc);
-    background-image: -moz-linear-gradient(top, #fcfcfc, #fcfcfc);
-    background-image: -ms-linear-gradient(top, #fcfcfc, #fcfcfc);
-    background-image: -o-linear-gradient(top, #fcfcfc, #fcfcfc);
-    background-image: linear-gradient(top, #fcfcfc, #fcfcfc);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fcfcfc',EndColorStr='#fcfcfc'); }
+    background-color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+    background-image: -webkit-linear-gradient(top, white, white);
+    background-image: -moz-linear-gradient(top, white, white);
+    background-image: -ms-linear-gradient(top, white, white);
+    background-image: -o-linear-gradient(top, white, white);
+    background-image: linear-gradient(top, white, white);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='white',EndColorStr='white'); }
   #SiteHeader .cse input.gsc-search-button:focus,
   #SiteHeader input.gsc-search-button:focus, #Main .cse input.gsc-search-button:focus,
   #Main input.gsc-search-button:focus {
