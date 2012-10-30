@@ -44,6 +44,7 @@ $header-margin: $unit;
 @mixin layout-side {
 	width: $side-width - $unit;
 	padding: $unit / 2;
-	position: absolute;
-	left: $main-width;
+	position: fixed;
+	left: 50%;
+	margin-left: $main-width / 2;
 }
