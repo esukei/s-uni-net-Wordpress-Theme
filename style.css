@@ -42,7 +42,8 @@ h1, h2, h3, h4, h5, h6 {
     display: inline;
     color: #333333;
     font-size: 32pt;
-    margin-right: 16pt; }
+    margin-right: 16pt;
+    line-height: 1.5; }
   .articleHeader .articleDate {
     display: inline-block;
     color: #c9c9c9;
@@ -57,14 +58,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 22px 22px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.03); }
   #Main #SiteHeader {
-    height: 44px; }
+    height: 132px; }
     #Main #SiteHeader #Logo {
       float: left;
       width: 160px;
       color: #d0d0d0;
       font-family: "Quicksand", sans-serif;
       font-size: 14pt;
-      line-height: 44px; }
+      line-height: 132px; }
       #Main #SiteHeader #Logo a {
         color: #d0d0d0;
         text-decoration: none; }

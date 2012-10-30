@@ -50,6 +50,7 @@ h1,h2,h3,h4,h5,h6 {
 		color: $header-color;
 		font-size: $header-font-size;
 		margin-right: $header-font-size / 2;
+		line-height: 1.5;
 	}
 	.articleDate {
 		display: inline-block;
