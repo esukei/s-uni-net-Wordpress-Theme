@@ -41,7 +41,8 @@ h1, h2, h3, h4, h5, h6 {
   .articleHeader .articleTitle {
     display: inline;
     color: #333333;
-    font-size: 32pt; }
+    font-size: 32pt;
+    margin-right: 32pt; }
   .articleHeader .articleDate {
     display: inline-block;
     color: #c9c9c9;
@@ -92,7 +93,8 @@ h1, h2, h3, h4, h5, h6 {
     #Main #Side #NewlyArticles .articleHeader {
       margin-bottom: 11px; }
       #Main #Side #NewlyArticles .articleHeader .articleTitle {
-        font-size: 14pt; }
+        font-size: 14pt;
+        margin-right: 14pt; }
       #Main #Side #NewlyArticles .articleHeader a.articleTitle {
         text-decoration: none; }
       #Main #Side #NewlyArticles .articleHeader .articleDate {
@@ -101,6 +103,16 @@ h1, h2, h3, h4, h5, h6 {
 #SiteFooter {
   width: 596px;
   margin: 0 auto; }
+  #SiteFooter #SiteNav {
+    font-size: 16pt;
+    text-align: right; }
+    #SiteFooter #SiteNav ul {
+      list-style: none; }
+      #SiteFooter #SiteNav ul li {
+        display: inline-block;
+        margin-left: 16pt; }
+        #SiteFooter #SiteNav ul li a {
+          text-decoration: none; }
 
 #SiteHeader, #Main {
   /* Slight reset to make the preview have ample padding. */

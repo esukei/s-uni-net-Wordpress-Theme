@@ -49,6 +49,7 @@ h1,h2,h3,h4,h5,h6 {
 		display: inline;
 		color: $header-color;
 		font-size: $header-font-size;
+		margin-right: $header-font-size;
 	}
 	.articleDate {
 		display: inline-block;
@@ -117,6 +118,7 @@ h1,h2,h3,h4,h5,h6 {
 				margin-bottom: $unit/4;
 				.articleTitle {
 					font-size: $list-font-size;
+					margin-right: $list-font-size;
 				}
 				a.articleTitle {
 					text-decoration: none;
@@ -128,8 +130,24 @@ h1,h2,h3,h4,h5,h6 {
 		}
 	}
 }
+
+
 #SiteFooter {
 	@include layout-main;
+	#SiteNav {
+		font-size: $info-font-size;
+		text-align: right;
+		ul {
+			list-style: none;
+			li {
+				display: inline-block;
+				margin-left: $info-font-size;
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+	}
 }
 
 @import "google_site_search";
