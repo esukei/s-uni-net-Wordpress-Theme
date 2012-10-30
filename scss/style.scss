@@ -57,6 +57,7 @@ h1,h2,h3,h4,h5,h6 {
 		color: $info-color;
 		font-family: $info-font-family;
 		font-size: $info-font-size;
+		height: $header-font-size;
 	}
 }
 
@@ -126,6 +127,7 @@ h1,h2,h3,h4,h5,h6 {
 				}
 				.articleDate {
 					font-size: $list-info-font-size;
+					height: $list-font-size;
 				}
 			}
 		}
