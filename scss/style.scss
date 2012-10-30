@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5,h6 {
 		display: inline;
 		color: $header-color;
 		font-size: $header-font-size;
-		margin-right: $header-font-size;
+		margin-right: $header-font-size / 2;
 	}
 	.articleDate {
 		display: inline-block;
@@ -63,13 +63,13 @@ h1,h2,h3,h4,h5,h6 {
 	@include layout-main;
 	position: relative;
 	background-color: $main-background-color;
-	padding: 0 $unit/2 $unit/2;
+	padding: 0 $unit / 2 $unit / 2;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .03);
 	#SiteHeader {
 		height: $site-header-height;
 		#Logo {
 			float: left;
-			width: $main-width/4;
+			width: $main-width / 4;
 			color: $logo-color;
 			font-family: $logo-font-family;
 			font-size: $logo-font-size;
@@ -85,14 +85,14 @@ h1,h2,h3,h4,h5,h6 {
 		}
 		nav {
 			margin: $margin-align-right;
-			width: $main-width/2;
+			width: $main-width / 2;
 		}
 	}
 	.singleArticle {
 		.articleBody {
 			line-height: $main-line-height;
 			p {
-				margin-bottom: $main-font-size*1.5;
+				margin-bottom: $main-font-size * 1.5;
 			}
 			ul {
 				margin-top: $main-font-size;
@@ -115,10 +115,10 @@ h1,h2,h3,h4,h5,h6 {
 		}
 		#NewlyArticles {
 			.articleHeader {
-				margin-bottom: $unit/4;
+				margin-bottom: $unit / 4;
 				.articleTitle {
 					font-size: $list-font-size;
-					margin-right: $list-font-size;
+					margin-right: $list-font-size / 2;
 				}
 				a.articleTitle {
 					text-decoration: none;
@@ -134,14 +134,15 @@ h1,h2,h3,h4,h5,h6 {
 
 #SiteFooter {
 	@include layout-main;
+	padding: $unit / 2 0;
 	#SiteNav {
-		font-size: $info-font-size;
+		font-size: $footer-font-size;
 		text-align: right;
 		ul {
 			list-style: none;
 			li {
 				display: inline-block;
-				margin-left: $info-font-size;
+				margin-left: $footer-font-size;
 				a {
 					text-decoration: none;
 				}

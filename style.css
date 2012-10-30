@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline;
     color: #333333;
     font-size: 32pt;
-    margin-right: 32pt; }
+    margin-right: 16pt; }
   .articleHeader .articleDate {
     display: inline-block;
     color: #c9c9c9;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 11px; }
       #Main #Side #NewlyArticles .articleHeader .articleTitle {
         font-size: 14pt;
-        margin-right: 14pt; }
+        margin-right: 7pt; }
       #Main #Side #NewlyArticles .articleHeader a.articleTitle {
         text-decoration: none; }
       #Main #Side #NewlyArticles .articleHeader .articleDate {
@@ -102,15 +102,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #SiteFooter {
   width: 596px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 22px 0; }
   #SiteFooter #SiteNav {
-    font-size: 16pt;
+    font-size: 12pt;
     text-align: right; }
     #SiteFooter #SiteNav ul {
       list-style: none; }
       #SiteFooter #SiteNav ul li {
         display: inline-block;
-        margin-left: 16pt; }
+        margin-left: 12pt; }
         #SiteFooter #SiteNav ul li a {
           text-decoration: none; }
 
