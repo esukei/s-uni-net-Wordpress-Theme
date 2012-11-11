@@ -83,35 +83,35 @@
 		font-weight: bold;
 		color: $main-color;
 		padding: 0 8px;
-		height: 29px;
-		min-width: 54px;
+		height: 25px;
+		min-width: 25px;
 
 		border: 1px solid $border-color;
 		border-radius: 2px;
 		-moz-border-radius: 2px;
 		-webkit-border-radius: 2px;
 
-		border-color: $border-color;
-		background-color: $main-background-color;
-		background-image: -webkit-gradient(linear,left top,left bottom,from($main-background-color),to($main-background-color));
-		background-image: -webkit-linear-gradient(top,$main-background-color,$main-background-color);
-		background-image: -moz-linear-gradient(top,$main-background-color,$main-background-color);
-		background-image: -ms-linear-gradient(top,$main-background-color,$main-background-color);
-		background-image: -o-linear-gradient(top,$main-background-color,$main-background-color);
-		background-image: linear-gradient(top,$main-background-color,$main-background-color);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$main-background-color}',EndColorStr='#{$main-background-color}');
+		border-color: $button-top-color;
+		background-color: $button-top-color;
+		background-image: -webkit-gradient(linear,left top,left bottom,from($button-top-color),to($button-bottom-color));
+		background-image: -webkit-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: -moz-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: -ms-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: -o-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: linear-gradient(top,$button-top-color,$button-bottom-color);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$button-top-color}',EndColorStr='#{$button-bottom-color}');
 	}
 	.cse input.gsc-search-button:hover,
 	input.gsc-search-button:hover {
-		border-color: $border-color;
-		background-color: $main-background-color;
-		background-image: -webkit-gradient(linear,left top,left bottom,from($main-background-color),to($main-background-color));
-		background-image: -webkit-linear-gradient(top,$main-background-color,$main-background-color);
-		background-image: -moz-linear-gradient(top,$main-background-color,$main-background-color);
-		background-image: -ms-linear-gradient(top,$main-background-color,$main-background-color);
-		background-image: -o-linear-gradient(top,$main-background-color,$main-background-color);
-		background-image: linear-gradient(top,$main-background-color,$main-background-color);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$main-background-color}',EndColorStr='#{$main-background-color}');
+		border-color: $button-top-color;
+		background-color: $button-top-color;
+		background-image: -webkit-gradient(linear,left top,left bottom,from($button-top-color),to($button-bottom-color));
+		background-image: -webkit-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: -moz-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: -ms-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: -o-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: linear-gradient(top,$button-top-color,$button-bottom-color);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$button-top-color}',EndColorStr='#{$button-bottom-color}');
 	}
 
 	.cse input.gsc-search-button:focus,
@@ -125,7 +125,7 @@
 	input.gsc-search-button-v2 {
 		width: 13px;
 		height: 13px;
-		padding: 6px 27px;
+		padding: 6px 6px;
 		min-width: 13px;
 		margin-top: 2px;
 	}
