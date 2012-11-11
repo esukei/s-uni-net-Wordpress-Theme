@@ -10,6 +10,17 @@
 		height: $site-header-height;
 		margin: 0;
 	}
+	//input
+	.gsib_a {
+		padding: 0 8px;
+	}
+	//for clear button
+	.gsib_b {
+		line-height: normal;
+	}
+	.gsst_a .gscb_a {
+		color: $info-color;
+	}
 	//search button
 	.cse input.gsc-search-button, input.gsc-search-button {
 		border: 1px solid $button-top-color;
@@ -41,12 +52,5 @@
 	.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
 		padding: 6px;
 		margin: 0;
-	}
-	//for clear button
-	.gsib_b {
-		line-height: normal;
-	}
-	.gsst_a .gscb_a {
-		color: $info-color;
 	}
 }

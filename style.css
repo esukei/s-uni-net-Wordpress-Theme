@@ -146,6 +146,12 @@ h1, h2, h3, h4, h5, h6 {
 #SiteHeader table.gsc-search-box, #Main table.gsc-search-box {
   height: 44px;
   margin: 0; }
+#SiteHeader .gsib_a, #Main .gsib_a {
+  padding: 0 8px; }
+#SiteHeader .gsib_b, #Main .gsib_b {
+  line-height: normal; }
+#SiteHeader .gsst_a .gscb_a, #Main .gsst_a .gscb_a {
+  color: #666666; }
 #SiteHeader .cse input.gsc-search-button, #SiteHeader input.gsc-search-button, #Main .cse input.gsc-search-button, #Main input.gsc-search-button {
   border: 1px solid #cccccc;
   border-radius: 2px;
@@ -172,10 +178,6 @@ h1, h2, h3, h4, h5, h6 {
 #SiteHeader .cse .gsc-search-button input.gsc-search-button-v2, #SiteHeader input.gsc-search-button-v2, #Main .cse .gsc-search-button input.gsc-search-button-v2, #Main input.gsc-search-button-v2 {
   padding: 6px;
   margin: 0; }
-#SiteHeader .gsib_b, #Main .gsib_b {
-  line-height: normal; }
-#SiteHeader .gsst_a .gscb_a, #Main .gsst_a .gscb_a {
-  color: #666666; }
 
 .articleFooter #fb-root div {
   top: -99999px !important;
