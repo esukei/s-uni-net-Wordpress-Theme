@@ -10,10 +10,8 @@
 			the_post();
 			?>
 			<li>
-				<a href="<?php the_permalink();?>">
-					<time datetime="<?php the_time('c');?>" class="articleDate"><?php the_time(get_option('date_format'));?></time>
-					<span class="articleTitle"><?php the_title();?></span>
-				</a>
+				<time datetime="<?php the_time('c');?>" class="articleDate"><?php the_time(get_option('date_format'));?></time>
+				<a class="articleTitle" href="<?php the_permalink();?>"><?php the_title();?></a>
 			</li>
 			<?php
 			endwhile;
