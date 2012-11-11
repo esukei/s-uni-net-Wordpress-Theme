@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   position: relative;
   margin-top: 44px;
+  padding-bottom: 44px;
   z-index: 1; }
   #Main #Article .singleArticle .articleDate {
     display: block;
@@ -180,6 +181,10 @@ h1, h2, h3, h4, h5, h6 {
 #SiteHeader .cse .gsc-search-button input.gsc-search-button-v2, #SiteHeader input.gsc-search-button-v2, #Main .cse .gsc-search-button input.gsc-search-button-v2, #Main input.gsc-search-button-v2 {
   padding: 6px;
   margin: 0; }
+#SiteHeader .cse .gsc-control-cse, #SiteHeader .gsc-control-cse, #Main .cse .gsc-control-cse, #Main .gsc-control-cse {
+  background-color: #fefefe;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); }
 
 .articleFooter #fb-root div {
   top: -99999px !important;
