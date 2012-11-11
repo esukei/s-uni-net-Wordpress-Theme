@@ -63,6 +63,7 @@ h1,h2,h3,h4,h5,h6 {
 	#HeaderContent {
 		width: $main-width;
 		margin: $margin-align-center;
+		height: $site-header-height;
 		#Logo {
 			float: left;
 			width: $main-width / 4;
@@ -83,6 +84,7 @@ h1,h2,h3,h4,h5,h6 {
 		nav {
 			margin: $margin-align-right;
 			width: $main-width / 2;
+			height: $site-header-height;
 		}
 	}
 }
