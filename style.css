@@ -182,6 +182,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 6px;
   margin: 0; }
 #SiteHeader .cse .gsc-control-cse, #SiteHeader .gsc-control-cse, #Main .cse .gsc-control-cse, #Main .gsc-control-cse {
+  margin-top: 88px;
+  margin-bottom: 44px;
   background-color: #fefefe;
   border-radius: 6px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); }

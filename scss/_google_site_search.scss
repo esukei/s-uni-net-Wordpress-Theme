@@ -58,6 +58,8 @@
 	}
 	//search result
 	.cse .gsc-control-cse, .gsc-control-cse {
+		margin-top: $unit * 2;
+		margin-bottom: $unit;
 		background-color: $main-background-color;
 		@include main-box-radius;
 		@include main-box-shadow;
