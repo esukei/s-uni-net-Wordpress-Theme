@@ -22,7 +22,7 @@ $body-font-size: 14pt;
 $body-font-family: sans-serif;
 $body-line-height: 1.5;
 $header-font-size: 32pt;
-$info-font-size: 16pt;
+$info-font-size: 14pt;
 $info-font-family: $main-font-face, sans-serif;
 $logo-font-size: 14pt;
 $logo-font-family: $main-font-face, sans-serif;
@@ -43,7 +43,7 @@ $header-margin: $unit;
 
 //mixins
 @mixin layout-main {
-	width: $main-width - $unit;
+	width: $main-width;
 	margin: 0 auto;
 }
 

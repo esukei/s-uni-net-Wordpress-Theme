@@ -34,6 +34,7 @@ a,a:hover,a:visited,a:active {
 }
 
 h1,h2,h3,h4,h5,h6 {
+	font-size: $body-font-size;
 	font-weight: normal;
 }
 
@@ -94,9 +95,9 @@ h1,h2,h3,h4,h5,h6 {
 	#Article {
 		.singleArticle {
 			.articleDate {
+				display: block;
 				padding: $unit / 2 0;
 				text-align: right;
-				color: $info-color;
 				font-size: $info-font-size;
 				line-height: 1;
 			}
@@ -108,6 +109,10 @@ h1,h2,h3,h4,h5,h6 {
 				font-size: $body-font-size;
 				font-family: $body-font-family;
 				line-height: $body-line-height;
+				.articleTitle {
+					font-size: $header-font-size;
+					margin-bottom: $unit;
+				}
 				p {
 					margin-bottom: $body-font-size * 1.5;
 				}

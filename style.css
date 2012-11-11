@@ -29,6 +29,7 @@ a, a:hover, a:visited, a:active {
   color: #333333; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-size: 14pt;
   font-weight: normal; }
 
 .articleList {
@@ -77,16 +78,16 @@ h1, h2, h3, h4, h5, h6 {
       width: 320px; }
 
 #Main {
-  width: 596px;
+  width: 640px;
   margin: 0 auto;
   position: relative;
   margin-top: 44px;
   z-index: 1; }
   #Main #Article .singleArticle .articleDate {
+    display: block;
     padding: 22px 0;
     text-align: right;
-    color: #666666;
-    font-size: 16pt;
+    font-size: 14pt;
     line-height: 1; }
   #Main #Article .singleArticle .articleBody {
     padding: 44px 22px;
@@ -96,6 +97,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14pt;
     font-family: sans-serif;
     line-height: 1.5; }
+    #Main #Article .singleArticle .articleBody .articleTitle {
+      font-size: 32pt;
+      margin-bottom: 44px; }
     #Main #Article .singleArticle .articleBody p {
       margin-bottom: 21pt; }
     #Main #Article .singleArticle .articleBody ul {
@@ -118,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(to bottom, #fcfcfc 0%, white);
   opacity: .5; }
   #SiteFooter #SiteNav {
-    width: 596px;
+    width: 640px;
     margin: 0 auto; }
     #SiteFooter #SiteNav ul {
       color: #666666;
