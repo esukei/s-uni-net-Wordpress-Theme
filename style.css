@@ -139,6 +139,44 @@ h1, h2, h3, h4, h5, h6 {
         #SiteFooter #SiteNav ul li a {
           text-decoration: none; }
 
+#SiteHeader form.gsc-search-box, #Main form.gsc-search-box {
+  height: 44px;
+  margin: 0;
+  line-height: 1; }
+#SiteHeader table.gsc-search-box, #Main table.gsc-search-box {
+  height: 44px;
+  margin: 0; }
+#SiteHeader .cse input.gsc-search-button, #SiteHeader input.gsc-search-button, #Main .cse input.gsc-search-button, #Main input.gsc-search-button {
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-color: #cccccc;
+  background-color: #cccccc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#999999));
+  background-image: -webkit-linear-gradient(top, #cccccc, #999999);
+  background-image: -moz-linear-gradient(top, #cccccc, #999999);
+  background-image: -ms-linear-gradient(top, #cccccc, #999999);
+  background-image: -o-linear-gradient(top, #cccccc, #999999);
+  background-image: linear-gradient(top, #cccccc, #999999);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc',EndColorStr='#999999'); }
+  #SiteHeader .cse input.gsc-search-button:hover, #SiteHeader input.gsc-search-button:hover, #Main .cse input.gsc-search-button:hover, #Main input.gsc-search-button:hover {
+    background-color: #cccccc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#999999));
+    background-image: -webkit-linear-gradient(top, #cccccc, #999999);
+    background-image: -moz-linear-gradient(top, #cccccc, #999999);
+    background-image: -ms-linear-gradient(top, #cccccc, #999999);
+    background-image: -o-linear-gradient(top, #cccccc, #999999);
+    background-image: linear-gradient(top, #cccccc, #999999);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc',EndColorStr='#999999'); }
+#SiteHeader .cse .gsc-search-button input.gsc-search-button-v2, #SiteHeader input.gsc-search-button-v2, #Main .cse .gsc-search-button input.gsc-search-button-v2, #Main input.gsc-search-button-v2 {
+  padding: 6px;
+  margin: 0; }
+#SiteHeader .gsib_b, #Main .gsib_b {
+  line-height: normal; }
+#SiteHeader .gsst_a .gscb_a, #Main .gsst_a .gscb_a {
+  color: #666666; }
+
 .articleFooter #fb-root div {
   top: -99999px !important;
   left: -99999px !important; }

@@ -1,4 +1,52 @@
 @import "definitions";
 #SiteHeader,#Main{
+	//search box
+	form.gsc-search-box {
+		height: $site-header-height;
+		margin: 0;
+		line-height: 1;
+	}
+	table.gsc-search-box {
+		height: $site-header-height;
+		margin: 0;
+	}
+	//search button
+	.cse input.gsc-search-button, input.gsc-search-button {
+		border: 1px solid $button-top-color;
+		border-radius: 2px;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
 
+		border-color: $button-top-color;
+		background-color: $button-top-color;
+		background-image: -webkit-gradient(linear,left top,left bottom,from($button-top-color),to($button-bottom-color));
+		background-image: -webkit-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: -moz-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: -ms-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: -o-linear-gradient(top,$button-top-color,$button-bottom-color);
+		background-image: linear-gradient(top,$button-top-color,$button-bottom-color);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$button-top-color}',EndColorStr='#{$button-bottom-color}');
+
+		&:hover {
+			background-color: $button-top-color;
+			background-image: -webkit-gradient(linear,left top,left bottom,from($button-top-color),to($button-bottom-color));
+			background-image: -webkit-linear-gradient(top,$button-top-color,$button-bottom-color);
+			background-image: -moz-linear-gradient(top,$button-top-color,$button-bottom-color);
+			background-image: -ms-linear-gradient(top,$button-top-color,$button-bottom-color);
+			background-image: -o-linear-gradient(top,$button-top-color,$button-bottom-color);
+			background-image: linear-gradient(top,$button-top-color,$button-bottom-color);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$button-top-color}',EndColorStr='#{$button-bottom-color}');
+		}
+	}
+	.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+		padding: 6px;
+		margin: 0;
+	}
+	//for clear button
+	.gsib_b {
+		line-height: normal;
+	}
+	.gsst_a .gscb_a {
+		color: $info-color;
+	}
 }
