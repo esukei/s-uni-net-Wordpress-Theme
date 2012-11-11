@@ -146,6 +146,8 @@ h1, h2, h3, h4, h5, h6 {
 #SiteHeader table.gsc-search-box, #Main table.gsc-search-box {
   height: 44px;
   margin: 0; }
+#SiteHeader .gstl_0, #Main .gstl_0 {
+  height: 28px; }
 #SiteHeader .gsib_a, #Main .gsib_a {
   padding: 0 8px; }
 #SiteHeader .gsib_b, #Main .gsib_b {
