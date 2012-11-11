@@ -4,7 +4,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<title><?php the_appropriate_title();?></title>
 	<meta name="viewport" content="width=640px, initial-scale=1">
-	<link href='//fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+	<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Quicksand:400,700'>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" media="screen">
 	<script>
 		(function() {
@@ -19,7 +19,12 @@
 	<?php wp_head();?>
 </head>
 <body>
-<div id="Main">
-	<header id="SiteHeader">
+<header id="SiteHeader">
+	<div id="HeaderContent">
 		<h1 id="Logo"><a href="/"><?php bloginfo('name');?></a></h1>
-	</header>
+		<nav class="search">
+			<gcse:searchbox-only></gcse:searchbox-only>
+		</nav>
+	</div>
+</header>
+<div id="Main">

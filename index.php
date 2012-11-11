@@ -1,7 +1,5 @@
 <?php get_header();?>
-	<nav class="search">
-		<gcse:searchbox-only></gcse:searchbox-only>
-	</nav>
+
 	<section id="Index">
 		<?php
 		if(have_posts()):
@@ -11,9 +9,9 @@
 			while(have_posts()):
 			the_post();
 			?>
-			<li class="articleHeader">
+			<li>
+				<time datetime="<?php the_time('c');?>" class="articleDate"><?php the_time(get_option('date_format'));?></time>
 				<a class="articleTitle" href="<?php the_permalink();?>"><?php the_title();?></a>
-				<span class="articleDate"><?php the_time(get_option('date_format'));?></span>
 			</li>
 			<?php
 			endwhile;

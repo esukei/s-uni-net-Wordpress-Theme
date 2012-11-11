@@ -25,8 +25,8 @@ blog.s-uni.net Theme is distributed under the terms of the GNU GPL
 html,body {
 	color: $main-color;
 	background-color: $body-background-color;
-	font-family: $main-font-family;
-	font-size: $main-font-size;
+	font-family: $body-font-family;
+	font-size: $body-font-size;
 }
 
 a,a:hover,a:visited,a:active {
@@ -41,41 +41,33 @@ h1,h2,h3,h4,h5,h6 {
 	list-style: none;
 }
 
-.articleHeader {
-	display: block;
-	margin-bottom: $header-margin;
-	line-height: 1;
-	.articleTitle {
-		display: inline;
-		color: $header-color;
-		font-size: $header-font-size;
-		margin-right: $header-font-size / 2;
-		line-height: 1.5;
-	}
-	.articleDate {
-		display: inline-block;
-		color: $info-color;
-		font-family: $info-font-family;
-		font-size: $info-font-size;
-		height: $header-font-size;
-		vertical-align: middle;
-	}
+.articleTitle {
+	color: $header-color;
 }
 
-#Main {
-	@include layout-main;
-	position: relative;
-	background-color: $main-background-color;
-	padding: 0 $unit / 2 $unit / 2;
-	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .03);
-	#SiteHeader {
-		height: $site-header-height;
+.articleDate {
+	color: $info-color;
+	font-family: $info-font-family;
+}
+
+#SiteHeader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $site-header-height;
+	@include gradient-to-bottom($header-bg-top-color, $header-bg-middle-color 50%);
+	box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+	#HeaderContent {
+		width: $main-width;
+		margin: $margin-align-center;
 		#Logo {
 			float: left;
 			width: $main-width / 4;
 			color: $logo-color;
 			font-family: $logo-font-family;
 			font-size: $logo-font-size;
+			font-weight: bold;
 			line-height: $site-header-height;
 			a {
 				color: $logo-color;
@@ -91,16 +83,24 @@ h1,h2,h3,h4,h5,h6 {
 			width: $main-width / 2;
 		}
 	}
+}
+
+#Main {
+	@include layout-main;
+	position: relative;
+	background-color: $main-background-color;
+	padding: $unit $unit / 2;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .03);
 	.singleArticle {
 		.articleBody {
-			line-height: $main-line-height;
+			line-height: $body-line-height;
 			p {
-				margin-bottom: $main-font-size * 1.5;
+				margin-bottom: $body-font-size * 1.5;
 			}
 			ul {
-				margin-top: $main-font-size;
-				margin-bottom: $main-font-size;
-				padding-left: $main-font-size;
+				margin-top: $body-font-size;
+				margin-bottom: $body-font-size;
+				padding-left: $body-font-size;
 				li {
 
 				}
@@ -110,36 +110,18 @@ h1,h2,h3,h4,h5,h6 {
 	#Article {
 
 	}
-	#Side {
-		@include layout-side;
-		top: 0;
-		.search {
-			margin-bottom: $unit;
-		}
-		#NewlyArticles {
-			.articleHeader {
-				margin-bottom: $unit / 4;
-				.articleTitle {
-					font-size: $list-font-size;
-					margin-right: $list-font-size / 2;
-				}
-				a.articleTitle {
-					text-decoration: none;
-				}
-				.articleDate {
-					font-size: $list-info-font-size;
-					height: $list-font-size;
-				}
-			}
-		}
-	}
 }
 
 
 #SiteFooter {
-	@include layout-main;
-	padding: $unit / 2 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: $unit;
 	#SiteNav {
+		@include layout-main;
+		padding: $unit / 2 0;
 		font-size: $footer-font-size;
 		text-align: right;
 		ul {

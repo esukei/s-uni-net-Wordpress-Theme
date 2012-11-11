@@ -1,21 +1,31 @@
+$unit: 44px;
+
 //color
-$main-color: #909090;
-$body-background-color: #FBFBFB;
+$body-background-color: #EDEDED;
+
+$header-color: #333;
+$header-font-weight: bold;
+$header-bg-top-color: #383838;
+$header-bg-middle-color: #000;
+$logo-color: #FFF;
+
+$main-color: #333;
 $main-background-color: #FEFEFE;
-$header-color: #333333;
-$info-color: #C9C9C9;
-$logo-color: #D0D0D0;
+
+$info-color: #666;
+
 $border-color: #CCCCCC;
 
 //font
-$main-font-size: 14pt;
-$main-font-family: sans-serif;
-$main-line-height: 150%;
+$main-font-face: 'Quicksand';
+$body-font-size: 14pt;
+$body-font-family: sans-serif;
+$body-line-height: 150%;
 $header-font-size: 32pt;
 $info-font-size: 16pt;
-$info-font-family: 'Quicksand', sans-serif;
+$info-font-family: $main-font-face, sans-serif;
 $logo-font-size: 14pt;
-$logo-font-family: 'Quicksand', sans-serif;
+$logo-font-family: $main-font-face, sans-serif;
 $list-font-size: 14pt;
 $list-info-font-size: 10pt;
 $footer-font-size: 12pt;
@@ -27,11 +37,8 @@ $margin-align-right: 0 0 0 auto;
 
 //dimentions
 $main-width: 640px;
-$max-width: 980px;
-$side-width: $max-width - $main-width;
 
-$unit: 44px;
-$site-header-height: $unit * 2;
+$site-header-height: $unit;
 $header-margin: $unit;
 
 
@@ -41,10 +48,15 @@ $header-margin: $unit;
 	margin: 0 auto;
 }
 
-@mixin layout-side {
-	width: $side-width - $unit;
-	padding: $unit / 2;
-	position: fixed;
-	left: 50%;
-	margin-left: $main-width / 2;
+@mixin gradient-to-bottom($first, $next...) {
+	background-color: $first;
+	background-image: -webkit-linear-gradient(top, $first 0%, $next);
+	background-image:    -moz-linear-gradient(top, $first 0%, $next);
+	background-image:     -ms-linear-gradient(top, $first 0%, $next);
+	background-image:      -o-linear-gradient(top, $first 0%, $next);
+	background-image:         linear-gradient(to bottom, $first 0%, $next);
+}
+
+@mixin main-box-shadow($color: #000) {
+	box-shadow: 0 0 4px $color;
 }
