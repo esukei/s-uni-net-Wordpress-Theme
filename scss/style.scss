@@ -58,6 +58,7 @@ h1,h2,h3,h4,h5,h6 {
 	height: $site-header-height;
 	@include gradient-to-bottom($header-bg-top-color, $header-bg-middle-color 50%);
 	box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+	z-index: 100;
 	#HeaderContent {
 		width: $main-width;
 		margin: $margin-align-center;
@@ -88,27 +89,38 @@ h1,h2,h3,h4,h5,h6 {
 #Main {
 	@include layout-main;
 	position: relative;
-	background-color: $main-background-color;
-	padding: $unit $unit / 2;
-	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .03);
-	.singleArticle {
-		.articleBody {
-			line-height: $body-line-height;
-			p {
-				margin-bottom: $body-font-size * 1.5;
+	margin-top: $site-header-height;
+	z-index: 1;
+	#Article {
+		.singleArticle {
+			.articleDate {
+				padding: $unit / 2 0;
+				text-align: right;
+				color: $info-color;
+				font-size: $info-font-size;
+				line-height: 1;
 			}
-			ul {
-				margin-top: $body-font-size;
-				margin-bottom: $body-font-size;
-				padding-left: $body-font-size;
-				li {
+			.articleBody {
+				padding: $unit $unit / 2;
+				background-color: $main-background-color;
+				@include main-box-shadow;
+				@include main-box-radius;
+				font-size: $body-font-size;
+				font-family: $body-font-family;
+				line-height: $body-line-height;
+				p {
+					margin-bottom: $body-font-size * 1.5;
+				}
+				ul {
+					margin-top: $body-font-size;
+					margin-bottom: $body-font-size;
+					padding-left: $body-font-size;
+					li {
 
+					}
 				}
 			}
 		}
-	}
-	#Article {
-
 	}
 }
 
@@ -119,13 +131,18 @@ h1,h2,h3,h4,h5,h6 {
 	left: 0;
 	width: 100%;
 	height: $unit;
+	z-index: 50;
+	@include gradient-to-bottom(#FCFCFC, #FFFFFF);
+	opacity: .5;
 	#SiteNav {
 		@include layout-main;
-		padding: $unit / 2 0;
-		font-size: $footer-font-size;
-		text-align: right;
 		ul {
+			color: $info-color;
+			font-family: $info-font-family;
+			font-size: $footer-font-size;
+			text-align: right;
 			list-style: none;
+			line-height: $unit;
 			li {
 				display: inline-block;
 				margin-left: $footer-font-size;

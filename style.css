@@ -53,7 +53,8 @@ h1, h2, h3, h4, h5, h6 {
   background-image: -ms-linear-gradient(top, #383838 0%, black 50%);
   background-image: -o-linear-gradient(top, #383838 0%, black 50%);
   background-image: linear-gradient(to bottom, #383838 0%, black 50%);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  z-index: 100; }
   #SiteHeader #HeaderContent {
     width: 640px;
     margin: 0 auto; }
@@ -79,14 +80,25 @@ h1, h2, h3, h4, h5, h6 {
   width: 596px;
   margin: 0 auto;
   position: relative;
-  background-color: #fefefe;
-  padding: 44px 22px;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.03); }
-  #Main .singleArticle .articleBody {
-    line-height: 150%; }
-    #Main .singleArticle .articleBody p {
+  margin-top: 44px;
+  z-index: 1; }
+  #Main #Article .singleArticle .articleDate {
+    padding: 22px 0;
+    text-align: right;
+    color: #666666;
+    font-size: 16pt;
+    line-height: 1; }
+  #Main #Article .singleArticle .articleBody {
+    padding: 44px 22px;
+    background-color: #fefefe;
+    box-shadow: 0 0 4px black;
+    border-radius: 6px;
+    font-size: 14pt;
+    font-family: sans-serif;
+    line-height: 1.5; }
+    #Main #Article .singleArticle .articleBody p {
       margin-bottom: 21pt; }
-    #Main .singleArticle .articleBody ul {
+    #Main #Article .singleArticle .articleBody ul {
       margin-top: 14pt;
       margin-bottom: 14pt;
       padding-left: 14pt; }
@@ -96,15 +108,25 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 44px; }
+  height: 44px;
+  z-index: 50;
+  background-color: #fcfcfc;
+  background-image: -webkit-linear-gradient(top, #fcfcfc 0%, white);
+  background-image: -moz-linear-gradient(top, #fcfcfc 0%, white);
+  background-image: -ms-linear-gradient(top, #fcfcfc 0%, white);
+  background-image: -o-linear-gradient(top, #fcfcfc 0%, white);
+  background-image: linear-gradient(to bottom, #fcfcfc 0%, white);
+  opacity: .5; }
   #SiteFooter #SiteNav {
     width: 596px;
-    margin: 0 auto;
-    padding: 22px 0;
-    font-size: 12pt;
-    text-align: right; }
+    margin: 0 auto; }
     #SiteFooter #SiteNav ul {
-      list-style: none; }
+      color: #666666;
+      font-family: "Quicksand", sans-serif;
+      font-size: 12pt;
+      text-align: right;
+      list-style: none;
+      line-height: 44px; }
       #SiteFooter #SiteNav ul li {
         display: inline-block;
         margin-left: 12pt; }
