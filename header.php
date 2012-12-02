@@ -3,7 +3,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<title><?php the_appropriate_title();?></title>
-	<meta name="viewport" content="width=640, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=640">
 	<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Quicksand:400,700'>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" media="screen">
 	<script>
