@@ -9,6 +9,7 @@
 		$win
 			.on({
 				resize: function (event) {
+					console.log('r');
 					if($win.width() < 640) {
 						$siteHeader.css({
 							position: 'absolute',
@@ -23,10 +24,16 @@
 					}
 				},
 				gestureend: function (event) {
+					console.log('wing');
 					$win.triggerHandler('resize');
 				}
 			})
 			.triggerHandler('resize');
+
+		$(doc).on('gestureend', function (event) {
+			console.log('doc');
+			$win.triggerHandler('resize');
+		});
 	});
 
 }) (this, this.document, jQuery);
