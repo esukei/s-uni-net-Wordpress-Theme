@@ -2,8 +2,24 @@
 
 	var $win = $(win);
 
-	$win.on('resize', function (event) {
-		console.log($win.width());
-	})
+	$(function(){
+
+		var $siteHeader = $('#SiteHeader');
+
+		$win
+			.on('resize', function (event) {
+				if($win.width() < 640) {
+					$siteHeader.css({
+						posiiton: 'absolute'
+					});
+				}
+				else {
+					$siteHeader.css({
+						posiiton: 'fixed'
+					})
+				}
+			})
+			.triggerHandler('resize');
+	});
 
 }) (this, this.document, jQuery);
