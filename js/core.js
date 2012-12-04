@@ -9,6 +9,7 @@
 		$win
 			.on('resize', function (event) {
 				alert($win.width());//console.log('r');
+				alert(win.innerWidth);
 				if($win.width() < 640) {
 					$siteHeader.css({
 						position: 'absolute',
