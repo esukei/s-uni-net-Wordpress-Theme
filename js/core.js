@@ -10,12 +10,14 @@
 			.on('resize', function (event) {
 				if($win.width() < 640) {
 					$siteHeader.css({
-						position: 'absolute'
+						position: 'absolute',
+						width: 'auto'
 					});
 				}
 				else {
 					$siteHeader.css({
-						position: 'fixed'
+						position: 'fixed',
+						width: '100%'
 					})
 				}
 			})
