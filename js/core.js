@@ -8,15 +8,14 @@
 
 		$win
 			.on('resize', function (event) {
-				console.log($win.width());
 				if($win.width() < 640) {
 					$siteHeader.css({
-						posiiton: 'absolute'
+						position: 'absolute'
 					});
 				}
 				else {
 					$siteHeader.css({
-						posiiton: 'fixed'
+						position: 'fixed'
 					})
 				}
 			})
