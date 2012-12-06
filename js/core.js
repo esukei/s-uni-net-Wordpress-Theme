@@ -23,6 +23,11 @@
 			})
 			.triggerHandler('resize');
 
+		var shortEdge = (screen.width < screen.height) ? screen.width : screen.height;
+		if(shortEdge > 640)
+		{
+			$('meta[name="viewport"]').remove();
+		}
 	});
 
 }) (this, this.document, jQuery);
