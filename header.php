@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" media="screen">
 	<script>
 		(function() {
-			var cx = '006434572749424858842:tfi0fkdcggg';
+			var cx = '006434572749424858842:WMX-1187131900';
 			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
 			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
 					'//www.google.com/cse/cse.js?cx=' + cx;
