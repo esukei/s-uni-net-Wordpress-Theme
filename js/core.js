@@ -26,7 +26,7 @@
 		var shortEdge = (screen.width < screen.height) ? screen.width : screen.height;
 		if(shortEdge > 640)
 		{
-			$('meta[name="viewport"]').remove();
+			$('meta[name="viewport"]').attr({content: 'width=1024'});
 		}
 	});
 
