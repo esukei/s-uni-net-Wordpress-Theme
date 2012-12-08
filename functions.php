@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Asia/Tokyo');
 function get_the_appropriate_title($delimiter = ' | '){
 	$individualTitle = '';
 	if(is_page('search'))
