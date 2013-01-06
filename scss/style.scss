@@ -140,6 +140,14 @@ h1,h2,h3,h4,h5,h6 {
 					font-size: $header-font-size;
 					margin-bottom: $unit;
 				}
+				h2 {
+					font-size: $header-font-size * 0.6;
+					margin-bottom: $unit;
+				}
+				h3 {
+					font-size: $header-font-size * 0.5;
+					margin-bottom: $unit;
+				}
 				p {
 					margin-bottom: $body-font-size * 1.5;
 				}
