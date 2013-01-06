@@ -57,12 +57,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   z-index: 100; }
   #SiteHeader #HeaderContent {
-    width: 629px;
+    width: 1013px;
     margin: 0 auto;
     height: 44px; }
     #SiteHeader #HeaderContent #Logo {
       float: left;
-      width: 157.25px;
+      width: 253.25px;
       color: white;
       font-family: "Quicksand", sans-serif;
       font-size: 14pt;
@@ -76,11 +76,11 @@ h1, h2, h3, h4, h5, h6 {
           text-decoration: none; }
     #SiteHeader #HeaderContent nav {
       margin: 0 0 0 auto;
-      width: 314.5px;
+      width: 506.5px;
       height: 44px; }
 
 #Main {
-  width: 629px;
+  width: 1013px;
   margin: 0 auto;
   position: relative;
   margin-top: 44px;
@@ -120,6 +120,12 @@ h1, h2, h3, h4, h5, h6 {
     #Main #Article .singleArticle .articleBody .articleTitle {
       font-size: 32pt;
       margin-bottom: 44px; }
+    #Main #Article .singleArticle .articleBody h2 {
+      font-size: 19.2pt;
+      margin-bottom: 21pt; }
+    #Main #Article .singleArticle .articleBody h3 {
+      font-size: 16pt;
+      margin-bottom: 21pt; }
     #Main #Article .singleArticle .articleBody p {
       margin-bottom: 21pt; }
     #Main #Article .singleArticle .articleBody ul {
@@ -142,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(to bottom, #fcfcfc 0%, white);
   opacity: .5; }
   #SiteFooter #SiteNav {
-    width: 629px;
+    width: 1013px;
     margin: 0 auto; }
     #SiteFooter #SiteNav ul {
       color: #666666;
