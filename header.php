@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> prefix="og: http://ogp.me/ns#">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<title><?php the_appropriate_title();?></title>
+	<meta property="og:title" content="<?php the_appropriate_title();?>">
+	<meta name="description" content="<?php the_appropriate_description();?>">
+	<meta property="og:description" content="<?php the_appropriate_description();?>">
+	<meta property="og:url" content="<?php echo get_bloginfo('url') . $_SERVER['REQUEST_URI']; ?>">
 	<meta name="viewport" content="width=640">
 	<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Quicksand:400,700'>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" media="screen">
