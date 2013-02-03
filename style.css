@@ -30,7 +30,7 @@ a, a:hover, a:visited, a:active {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 14pt;
-  font-weight: normal; }
+  font-weight: bold; }
 
 .articleList {
   list-style: none; }
@@ -132,7 +132,8 @@ h1, h2, h3, h4, h5, h6 {
       padding-left: 14pt; }
     #Main #Article .singleArticle .articleBody h1 + h2,
     #Main #Article .singleArticle .articleBody h2 + h3,
-    #Main #Article .singleArticle .articleBody h3 + h4,
+    #Main #Article .singleArticle .articleBody h3 + h4 {
+      margin-top: 22px; }
     #Main #Article .singleArticle .articleBody p + * {
       margin-top: 44px; }
 
