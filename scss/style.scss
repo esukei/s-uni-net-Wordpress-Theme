@@ -142,14 +142,15 @@ h1,h2,h3,h4,h5,h6 {
 				}
 				h2 {
 					font-size: $header-font-size * 0.6;
-					margin-bottom: $body-font-size * 1.5;
 				}
 				h3 {
 					font-size: $header-font-size * 0.5;
-					margin-bottom:  $body-font-size * 1.5;
+				}
+				h4 {
+					font-size: $header-font-size * 0.5;
 				}
 				p {
-					margin-bottom: $body-font-size * 1.5;
+
 				}
 				ul {
 					margin-top: $body-font-size;
@@ -158,6 +159,12 @@ h1,h2,h3,h4,h5,h6 {
 					li {
 
 					}
+				}
+				h1 + h2,
+				h2 + h3,
+				h3 + h4,
+				p + p {
+					margin-top: $unit;
 				}
 			}
 		}
