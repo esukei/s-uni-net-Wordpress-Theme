@@ -18,3 +18,6 @@ function get_the_appropriate_title($delimiter = ' | '){
 function the_appropriate_title($delimiter = ' | '){
 	echo get_the_appropriate_title($delimiter);
 }
+
+//remove comment feed
+remove_action('wp_head', 'feed_links_extra', 3);
