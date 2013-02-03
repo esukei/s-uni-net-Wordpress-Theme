@@ -130,6 +130,9 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: 14pt;
       margin-bottom: 14pt;
       padding-left: 14pt; }
+    #Main #Article .singleArticle .articleBody .gist {
+      margin-top: 14pt;
+      margin-bottom: 14pt; }
     #Main #Article .singleArticle .articleBody h1 + h2,
     #Main #Article .singleArticle .articleBody h2 + h3,
     #Main #Article .singleArticle .articleBody h3 + h4 {
