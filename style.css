@@ -121,17 +121,20 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 32pt;
       margin-bottom: 44px; }
     #Main #Article .singleArticle .articleBody h2 {
-      font-size: 19.2pt;
-      margin-bottom: 21pt; }
+      font-size: 19.2pt; }
     #Main #Article .singleArticle .articleBody h3 {
-      font-size: 16pt;
-      margin-bottom: 21pt; }
-    #Main #Article .singleArticle .articleBody p {
-      margin-bottom: 21pt; }
+      font-size: 16pt; }
+    #Main #Article .singleArticle .articleBody h4 {
+      font-size: 16pt; }
     #Main #Article .singleArticle .articleBody ul {
       margin-top: 14pt;
       margin-bottom: 14pt;
       padding-left: 14pt; }
+    #Main #Article .singleArticle .articleBody h1 + h2,
+    #Main #Article .singleArticle .articleBody h2 + h3,
+    #Main #Article .singleArticle .articleBody h3 + h4,
+    #Main #Article .singleArticle .articleBody p + p {
+      margin-top: 44px; }
 
 #SiteFooter {
   position: fixed;
