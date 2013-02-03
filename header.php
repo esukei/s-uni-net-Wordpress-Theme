@@ -11,6 +11,7 @@
 	<meta name="viewport" content="width=640">
 	<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Quicksand:400,700'>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" media="screen">
+	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('url'); ?>/feed">
 	<script>
 		(function() {
 			var cx = '006434572749424858842:WMX-1187131900';
