@@ -4,7 +4,7 @@ function get_the_appropriate_title($delimiter = ' | '){
 	$individualTitle = '';
 	if(is_page('search'))
 	{
-		$individualTitle = 'search results of "' . htmlspecialchars($_GET['q'], ENT_QUOTES, 'UTF-8') . '"' . $delimiter;
+		$individualTitle = 'search results of [' . htmlspecialchars($_GET['q'], ENT_QUOTES, 'UTF-8') . ']' . $delimiter;
 	}
 	elseif(is_single() || is_page())
 	{
@@ -22,7 +22,7 @@ function get_the_appropriate_description(){
 	$description = '';
 	if(is_page('search'))
 	{
-		$description = 'search results of "' . htmlspecialchars($_GET['q'], ENT_QUOTES, 'UTF-8');
+		$description = 'search results of [' . htmlspecialchars($_GET['q'], ENT_QUOTES, 'UTF-8') . ']';
 	}
 	elseif(is_single() || is_page())
 	{
