@@ -31,6 +31,9 @@ function get_the_appropriate_description(){
 	elseif(is_404()){
 		$description = 'Sorry, not found.';
 	}
+	else {
+		$description = get_bloginfo('description', 'show');
+	}
 	return $description;
 }
 function the_appropriate_description(){
