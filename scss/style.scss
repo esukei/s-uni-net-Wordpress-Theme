@@ -153,12 +153,20 @@ h1,h2,h3,h4,h5,h6 {
 
 				}
 				ul {
-					margin-top: $body-font-size;
-					margin-bottom: $body-font-size;
-					padding-left: $body-font-size;
+					margin-top: $unit * 0.5;
+					margin-bottom: $unit * 0.5;
+					padding-left: $unit * 0.5;
 					li {
 
 					}
+				}
+				blockquote {
+					padding: $unit * 0.5;
+					background-color: $blockquote-background-color;
+					@include main-box-radius;
+					box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
+					margin-top: $unit * 0.5;
+					margin-bottom: $unit * 0.5;
 				}
 				.gist {
 					margin-top: $body-font-size;
@@ -169,7 +177,10 @@ h1,h2,h3,h4,h5,h6 {
 				h3 + h4 {
 					margin-top: $unit * 0.5;
 				}
-				p + * {
+				p + h2,
+				p + h3,
+				p + h4,
+				p + p {
 					margin-top: $unit;
 				}
 			}

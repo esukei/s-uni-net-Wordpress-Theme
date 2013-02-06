@@ -127,9 +127,16 @@ h1, h2, h3, h4, h5, h6 {
     #Main #Article .singleArticle .articleBody h4 {
       font-size: 16pt; }
     #Main #Article .singleArticle .articleBody ul {
-      margin-top: 14pt;
-      margin-bottom: 14pt;
-      padding-left: 14pt; }
+      margin-top: 22px;
+      margin-bottom: 22px;
+      padding-left: 22px; }
+    #Main #Article .singleArticle .articleBody blockquote {
+      padding: 22px;
+      background-color: #fbfbfb;
+      border-radius: 6px;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+      margin-top: 22px;
+      margin-bottom: 22px; }
     #Main #Article .singleArticle .articleBody .gist {
       margin-top: 14pt;
       margin-bottom: 14pt; }
@@ -137,7 +144,10 @@ h1, h2, h3, h4, h5, h6 {
     #Main #Article .singleArticle .articleBody h2 + h3,
     #Main #Article .singleArticle .articleBody h3 + h4 {
       margin-top: 22px; }
-    #Main #Article .singleArticle .articleBody p + * {
+    #Main #Article .singleArticle .articleBody p + h2,
+    #Main #Article .singleArticle .articleBody p + h3,
+    #Main #Article .singleArticle .articleBody p + h4,
+    #Main #Article .singleArticle .articleBody p + p {
       margin-top: 44px; }
 
 #SiteFooter {
