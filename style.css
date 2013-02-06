@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
       padding: 22px;
       background-color: #fbfbfb;
       border-radius: 6px;
-      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2) inset;
       margin-top: 22px;
       margin-bottom: 22px; }
     #Main #Article .singleArticle .articleBody .gist {
@@ -142,12 +142,15 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 14pt; }
     #Main #Article .singleArticle .articleBody h1 + h2,
     #Main #Article .singleArticle .articleBody h2 + h3,
-    #Main #Article .singleArticle .articleBody h3 + h4 {
+    #Main #Article .singleArticle .articleBody h3 + h4,
+    #Main #Article .singleArticle .articleBody p + p {
       margin-top: 22px; }
     #Main #Article .singleArticle .articleBody p + h2,
     #Main #Article .singleArticle .articleBody p + h3,
     #Main #Article .singleArticle .articleBody p + h4,
-    #Main #Article .singleArticle .articleBody p + p {
+    #Main #Article .singleArticle .articleBody ul + h2,
+    #Main #Article .singleArticle .articleBody ul + h3,
+    #Main #Article .singleArticle .articleBody ul + h4 {
       margin-top: 44px; }
 
 #SiteFooter {

@@ -164,7 +164,7 @@ h1,h2,h3,h4,h5,h6 {
 					padding: $unit * 0.5;
 					background-color: $blockquote-background-color;
 					@include main-box-radius;
-					box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
+					box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2) inset;
 					margin-top: $unit * 0.5;
 					margin-bottom: $unit * 0.5;
 				}
@@ -174,13 +174,16 @@ h1,h2,h3,h4,h5,h6 {
 				}
 				h1 + h2,
 				h2 + h3,
-				h3 + h4 {
+				h3 + h4,
+				p + p {
 					margin-top: $unit * 0.5;
 				}
 				p + h2,
 				p + h3,
 				p + h4,
-				p + p {
+				ul + h2,
+				ul + h3,
+				ul + h4,{
 					margin-top: $unit;
 				}
 			}
